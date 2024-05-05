@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 100%;
+}
+body{
+    position: relative;
+}
+
+/* Social Bar */
+
+.socials{
+    position:fixed;
+    right: 25px;
+    bottom:20px;
+    width:40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding:10px ;
+    padding-bottom: 3px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(173, 173, 173, 0.288), 0 6px 20px 0 rgb(148, 147, 147);
+    animation: socialClr 2.0s infinite alternate ;
+    z-index: 1;
+}
+@keyframes socialClr {
+    100%{
+        background-color: #00ADEF;
+    }
+}
+.socials img{
+    width: 25px;
+}
+
+/* Navbar */
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    padding: 0 20px;
+    box-shadow: 2px 2px 40px rgba(177, 169, 169, 0.623);
+    position: relative;
+}
+nav .nav-boxs img {
+    width: 150px;
+}
+.nav-boxs ul li {
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+}
+.nav-boxs ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    position: relative;
+    transition: 0.5s;
+}
+.nav-boxs ul li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid #00ADEF;
+    transition: 0.5s;
+}
+.nav-boxs ul li a:hover::before {
+    width: 100%
+}
+.nav-boxs ul li a:hover {
+    color: #00ADEF;
+}
+.nav-boxs .dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 190px;
+    height: auto;
+    padding: 15px;
+    line-height: 2;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(248, 248, 248, 0.123);
+}
+.nav-boxs ul li:nth-child(4):hover .dropdown {
+    display: block;
+}
+.nav-boxs .dropdown ul li {
+    display: block;
+}
+.nav-boxs button {
+    width: 130px;
+    height: 40px;
+    border: 2px solid #00ADEF;
+    border-radius: 5px;
+    background-color: #00ADEF;
+    color: white;
+    transition: 0.5s;
+}
+.nav-boxs button:hover {
+    background-color: white;
+    color: #00ADEF;
+
+}
+.slide-button {
+    position: absolute;
+    right: 20px;
+}
+.slide-button img {
+    display: none;
+    width: 20px;
+    cursor: pointer;
+}
+.slide-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right:0%;
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+    transition: 0.5s;
+    z-index: 2;
+}
+.slide-menu-items {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.slide-menu-items img {
+    margin-bottom: 15px;
+}
+.slide-menu-items ul li {
+    list-style-type: none;
+    margin: 5px;
+}
+.slide-menu-items ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+.slide-menu-items #contentUs {
+    width: 130px;
+    height: 40px;
+    background-color: #00ADEF;
+    border: 2px solid #00ADEF;
+    border-radius: 5px;
+    color: white;
+    margin: 10px;
+    transition: 0.5s;
+}
+.slide-menu-items #contentUs:hover {
+    color: #00ADEF;
+    background-color: white;
+}
+.slide-menu-items #closeBtn {
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    border: 2px solid red;
+    border-radius: 5px;
+    color: white;
+    margin: 10px;
+    transition: 0.3s;
+}
+.slide-menu-items #closeBtn:hover {
+    background-color: white;
+    border: none;
+    color: red;
+    border: 1px solid red;
+}
+
+/* Container 1 */
+
+.cont1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/landingBg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.cont1main{
+    width: 100%;
+    height:100%;
+}
+.cont1content{
+    height: 100%;
+    max-width:700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 30px;
+    position: relative;
+    text-wrap: wrap;
+}
+.cont1content h5{
+font-size:15px;
+margin:6px 0;
+text-wrap: wrap;
+}
+
+
+
+.animationText{
+    height: 70px;
+    overflow:hidden;
+    
+
+}
+.animationText ul {
+
+}
+.animationText ul li{
+    list-style-type: none;
+    animation: liup 12s steps(4) infinite;
+    position: relative;
+    top:0px;
+}
+@keyframes liup {
+    100%{
+        top:-320px
+    }
+}
+.animationText ul li span{
+    position: relative;
+    color:#00ADEF;
+    font-weight: 600;
+    font-size: 50px;
+
+}
+.animationText ul li span::before{
+    content: "";
+    position: absolute;
+    top:0;
+    right:-30px;
+    width:110%;
+    height: 100%;
+    border-left:2px solid #00ADEF;
+    background-color: white;
+    animation: liryt 3s steps(15) infinite;
+}
+@keyframes liryt {
+    100%{
+    width:0%
+    }
+}
+
+
+
+
+
+
+
+/* Container 2 */

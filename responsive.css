@@ -1,0 +1,30 @@
+@media screen and (max-width:850px) {
+    .nav-boxs:nth-child(2){
+        display: none;
+    }
+    .nav-boxs:nth-child(3){
+        display: none;
+    }
+    .slide-button img{
+        display: block;
+    }
+}
+@media screen and (max-width:700px){
+    .cont1content h5{
+        font-size:12px;
+    }
+    .cont1content p{
+        font-size:12px;
+    }
+    .animationText{
+        height: 40px;
+    }
+    .animationText ul li span{
+        font-size:30px;
+    }
+    @keyframes liup {
+        100%{
+            top:-190px
+        }
+    }
+}
