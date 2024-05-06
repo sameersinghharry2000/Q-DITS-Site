@@ -17,7 +17,7 @@ body{
 /* Social Bar */
 
 .socials{
-    position:fixed;
+    position: absolute;
     right: 25px;
     bottom:20px;
     width:40px;
