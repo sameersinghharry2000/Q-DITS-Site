@@ -55,6 +55,7 @@ nav {
     padding: 0 20px;
     box-shadow: 2px 2px 40px rgba(177, 169, 169, 0.623);
     position: relative;
+    z-index: 3;
 }
 nav .nav-boxs img {
     width: 150px;
@@ -138,6 +139,7 @@ nav .nav-boxs img {
     background-color: white;
     transition: 0.5s;
     z-index: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(243, 241, 241, 0.19);
 }
 .slide-menu-items {
     width: 100%;
@@ -205,6 +207,107 @@ nav .nav-boxs img {
     width: 100%;
     height:100%;
     margin-top:-90px;
+    position: relative;
+}
+
+.iconflowting{
+    position: absolute;
+    position: relative;  
+
+}
+.iconflow{
+
+}
+
+.iconflow img{
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(243, 241, 241, 0.19);
+}
+#iconflow1{
+    position: absolute;
+    top:150px;
+    left:50%;
+    animation: iconflows1 3s infinite alternate;
+}
+@keyframes iconflows1 {
+    100%{
+        top: 180px;
+        left:48%;
+    }
+}
+
+#iconflow2{
+    position: absolute;
+    top:250px;
+    left:80%;
+    animation: iconflows2 3s infinite alternate;
+}
+@keyframes iconflows2 {
+    100%{
+        top: 280px;
+        left:78%;
+    }
+}
+#iconflow3{
+    position: absolute;
+    top:600px;
+    left:60%;
+    animation: iconflows3 3s infinite alternate;
+}
+@keyframes iconflows3 {
+    100%{
+        top: 630px;
+        left:58%;
+    }
+}
+#iconflow4{
+    position: absolute;
+    top:200px;
+    left:90%;
+    animation: iconflows4 3s infinite alternate;
+}
+@keyframes iconflows4 {
+    100%{
+        top: 230px;
+        left:88%;
+    }
+}
+#iconflow5{
+    position: absolute;
+    top:200px;
+    left:10%;
+    animation: iconflows5 3s infinite alternate;
+}
+@keyframes iconflows5 {
+    100%{
+        top: 230px;
+        left:8%;
+    }
+}
+#iconflow6{
+    position: absolute;
+    top:400px;
+    left:30%;
+    animation: iconflows6 3s infinite alternate;
+}
+@keyframes iconflows6 {
+    100%{
+        top: 430px;
+        left:28%;
+    }
+}
+#iconflow7{
+    position: absolute;
+    top:550px;
+    left:10%;
+    animation: iconflows7 3s infinite alternate;
+}
+@keyframes iconflows7 {
+    100%{
+        top: 580px;
+        left:8%;
+    }
 }
 .cont1content{
     height: 100%;
@@ -221,14 +324,9 @@ font-size:15px;
 margin:6px 0;
 text-wrap: wrap;
 }
-
-
-
 .animationText{
     height: 70px;
     overflow:hidden;
-    
-
 }
 .animationText ul {
 
