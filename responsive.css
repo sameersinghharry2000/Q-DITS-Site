@@ -38,9 +38,19 @@
         width: 150px;
         height: 33px;
     }
-
+    .cont3 h1 {
+        font-size:1.5rem;
+    }
+    .cont3 p{
+        font-size:80%;
+    }
 }
-
+@media screen and (max-width:750px) {
+    .cont4main{
+        flex-direction: column ;
+        gap:0px;
+    }
+}
 @media screen and (max-width:700px){
     .cont1content h5{
         font-size:12px;
@@ -94,5 +104,23 @@
     .cont2box .box1 img{
         /* width: 300px; */
         max-width: 7rem;
+    }
+}
+@media screen and (max-width:450px) {
+    .cont4box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:70px 10px;
+    }
+    .cont4box p{
+        font-size:60%;
+        text-align: center;
+    }
+    .cont4box img{
+        width:4rem;
+    }
+    .cont4box h4{
+        font-size:0.9rem;
     }
 }

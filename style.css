@@ -542,3 +542,70 @@ text-wrap: wrap;
 .cont3 p span{
     font-weight:bold;
 }
+
+.cont4{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F8FAFD;
+}
+.cont4 h1{
+    width:90%;
+    height: auto;
+    text-align: center;
+    color:grey;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.cont4:hover > h1{
+    color: #00ADEF;
+}
+.cont4main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap:30px;
+    padding:30px;
+    transition:0.5s;
+
+}
+.cont4box1{
+
+}
+.cont4box{
+    width: 100%;
+    background-color: #F8FAFD;
+    height:auto;
+    padding:20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(243, 241, 241, 0.19);
+}
+.cont4box p{
+    font-size:0.8rem;
+    margin-top:10px;
+}
+.cont4box button {
+    width: 130px;
+    height: 40px;
+    margin:20px 0;
+    border: 2px solid #00ADEF;
+    border-radius: 5px;
+    background-color:white;
+    color: #00ADEF;
+    transition: 0.5s;
+}
+.cont4main button:hover {
+    background-color: #00ADEF;
+    color: white;
+
+}
+.cont4box img{
+    width:3rem;
+    border-radius: 5px;
+    padding:10px;
+    margin-bottom: 10px;;
+    background-color: #bbe3f3;
+}
