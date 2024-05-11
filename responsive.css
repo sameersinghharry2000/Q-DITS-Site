@@ -56,6 +56,12 @@
 }
 
 @media screen and (max-width:800px) {
+    .socials{
+        width: 35px;
+    }
+    .socials img{
+        width: 20px;
+    }
     .cont2main h1{
         font-size:1.7rem;
     }
@@ -115,6 +121,7 @@
     .cont6main .cont6box h1{
         font-size: 1.7rem;
         margin:20px;
+        text-align: center;
     }
 }
 @media screen and (max-width:700px){
@@ -196,6 +203,12 @@
     }
 }
 @media screen and (max-width:450px) {
+    .socials{
+        width: 35px;
+    }
+    .socials img{
+        width: 20px;
+    }
     .cont4box{
         display: flex;
         flex-direction: column;
