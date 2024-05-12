@@ -6,7 +6,7 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-image: url(/img/landingBg.png);
+    background-image: url(../img/landingBg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
